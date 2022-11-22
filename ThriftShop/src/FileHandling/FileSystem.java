@@ -11,7 +11,7 @@ import java.util.Scanner;
 public class FileSystem {
     public void CreateFileMen(){
         try{
-            MenFile = new File("ThriftShopMen.data");
+            MenFile = new File("ThriftShop/src/FileHandling/ThriftShopMen.data");
             if(!MenFile.exists()){
                 MenFile.createNewFile();
             }
@@ -21,7 +21,7 @@ public class FileSystem {
     }
     public void CreateFileWomen(){
         try{
-            WomenFile = new File("ThriftShopWomen.data");
+            WomenFile = new File("ThriftShop/src/FileHandling/ThriftShopWomen.data");
             if(!WomenFile.exists()){
                 WomenFile.createNewFile();
             }
