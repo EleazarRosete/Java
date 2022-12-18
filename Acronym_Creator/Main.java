@@ -1,10 +1,10 @@
 import Assets.Input;
-
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
         System.out.println("\n\"Acronym Creator\"\n");
         new Input();
 
@@ -29,6 +29,5 @@ public class Main {
                 System.exit(0);
             }
         }
-
     }
 }
