@@ -1,20 +1,14 @@
 package Assets;
-import java.util.Arrays;
+
 public class Process {
     Process(String phrase) {
         String[] words = phrase.split(" ");
-        int size = words.length;
-        char[] Acronym = new char[size];
-        int index = 0;
+        String acronym = "";
         for (String word : words) {
-            Acronym[index] = word.charAt(0);
-            index++;
+            acronym = acronym + Character.toUpperCase(word.charAt(0));
         }
         System.out.println("\n- Phrase: " + phrase);
-        System.out.print("- Acronym: ");
-        for(char acronym : Acronym){
-            System.out.print(Character.toUpperCase(acronym));
-        }
+        System.out.print("- Acronym: " + acronym);
         System.out.println();
     }
 }
